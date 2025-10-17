@@ -6,7 +6,7 @@ import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton, WebAppInfo
 import os
 
-TOKEN = ""
+TOKEN = "8263029264:AAF9OjHICRjeWdVMldhxdfMEzDaafsgt5w8"
 CHANNEL_USERNAME = "@egylleague"
 LIVE_URL = "https://www.youtube.com/embed/QdmMCkF4Z4A"
 USERS_FILE = "users.txt"
