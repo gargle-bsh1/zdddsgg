@@ -6,9 +6,9 @@ import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton, WebAppInfo
 import os
 
-TOKEN = "8263029264:AAF9OjHICRjeWdVMldhxdfMEzDaafsgt5w8"
+TOKEN = ""
 CHANNEL_USERNAME = "@egylleague"
-LIVE_URL = "https://www.youtube.com/embed/gXP7W14ryJU?autoplay=1"
+LIVE_URL = "https://www.youtube.com/embed/QdmMCkF4Z4A"
 USERS_FILE = "users.txt"
 
 bot = telebot.TeleBot(TOKEN)
@@ -87,7 +87,7 @@ def check_subscription(call):
 def stats(message):
     if message.chat.type == 'private':
         user_id = message.from_user.id
-        ADMIN_ID = 5815924079  # ← بدّلها بـ ID حسابك
+        ADMIN_ID = 123456789  # ← بدّلها بـ ID حسابك
         if user_id != ADMIN_ID:
             bot.send_message(user_id, "🚫 هذا الأمر مخصص للإدارة فقط.")
             return
